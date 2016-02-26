@@ -1,0 +1,18 @@
+localhost:9091/order/sell?id=1&instrument=rena&price=10&quantity=300&type=GTC
+localhost:9091/customer/add?id=4&name=hamid&family=fallah
+localhost:9091/customer/deposit?id=4&amount=3000
+localhost:9091/order/buy?id=4&instrument=rena&price=60&quantity=3&type=GTC
+
+	$commands=[
+		http://localhost:9000/customer/add?name=reza&family=ali&id=2
+		http://localhost:9000/customer/deposit?id=2&amount=3000
+		http://localhost:9000/order/sell?id=1&instrument=RENA1&price=120&quantity=40&type=GTC
+		http://localhost:9000/order/buy?id=2&instrument=RENA1&price=150&quantity=20&type=IOC
+		http://localhost:9000/order/sell?id=2&instrument=RENA1&price=130&quantity=10&type=GTC
+		http://localhost:9000/customer/add?name=test&family=ali&id=3
+		http://localhost:9000/customer/deposit?id=3&amount=30000
+		http://localhost:9000/order/sell?id=1&instrument=RENA1&price=50&quantity=15&type=GTC
+		http://localhost:9000/order/sell?id=3&instrument=RENA1&price=150&quantity=5&type=MPO
+		http://localhost:9000/order/buy?id=3&instrument=RENA1&price=150&quantity=50&type=MPO
+		http://localhost:9000/order/buy?id=3&instrument=RENA1&price=150&quantity=45&type=MPO
+	];
